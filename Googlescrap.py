@@ -13,7 +13,7 @@ class GoogleKeywordScreenshooter:
     def __init__(self, keyword, screenshots_dir):
         # deprecated please pass in a service object in Selenium Python 문제
         self.service = Service("C:\\Users\\jjang\\.wdm\\drivers\\chromedriver\\win32\\96.0.4664.45\\chromedriver.exe")
-        self.browser = webdriver.Chrome(service=service)
+        self.browser = webdriver.Chrome(service=self.service)
         self.keyword = keyword
         self.screenshots_dir = screenshots_dir
 
