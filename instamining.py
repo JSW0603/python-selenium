@@ -9,18 +9,14 @@ service = Service("C:\\Users\\jjang\\.wdm\\drivers\\chromedriver\\win32\\96.0.46
 browser = webdriver.Chrome(service=service)
 
 browser.maximize_window()
-browser.get("https://www.instagram.com/")
+browser.get("https://www.naver.com/")
 time.sleep(4)
-
-actions = ActionChains(browser)
-actions.send_keys(Keys.TAB*3)
-actions.send_keys(Keys.ENTER).perform()
 
 id_input = browser.find_element(By.NAME, "username")
 id_input.send_keys("jjangsw0603@gmail.com")
 id_input.send_keys(Keys.TAB)
 pw_input = browser.find_element(By.NAME, "password")
-pw_input.send_keys("Ehfk2wmf0")
+pw_input.send_keys("")
 pw_input.send_keys(Keys.ENTER)
 time.sleep(4)
 
